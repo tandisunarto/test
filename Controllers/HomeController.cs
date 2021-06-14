@@ -24,6 +24,7 @@ namespace test.Controllers
         public IActionResult Index()
         {
             ViewBag.MessageSource = configuration["MessageSource"];
+            ViewBag.SpecialMessageSource = configuration["Special:Message"];
             return View();
         }
 
